@@ -1,5 +1,5 @@
 # AIHero-Contest
-2019年10月第四范式举办的AIHero算法大赛  
+2019年10月第四范式举办的AIHero算法大赛  第一名
 破解工商信息网站验证码，网址：http://www.gsxt.gov.cn/index.html  
 ### 验证码样式(根据文字语序点选）：  
 ![文字](https://github.com/WMandy/AIHero-Contest/blob/master/example_images/000000.png)
