@@ -1,3 +1,8 @@
+"""
+Created on Wed Sep 25 14:41:34 2019
+
+@author: mandi_wang
+"""
 import requests
 from urllib.request import urlretrieve
 from selenium import webdriver
