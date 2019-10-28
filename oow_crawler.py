@@ -23,8 +23,6 @@ driver.find_element_by_name('searchword').send_keys('德化县墩华')
 files = [x for x in os.listdir('D:\\wmd\\CAPTCHA_OOW\\test_images\\') if '.png' in x]
 xx = int(files[-1].rstrip('.png')) + 1
 
-# f = open('text_Chrome.txt', 'w')
-
 for i in range(200):
     
     # 找到class name为'l-captcha'的元素，点击（出现验证码图片，出现新的源代码）
@@ -58,11 +56,8 @@ for i in range(200):
     tmp = driver.find_element_by_class_name('geetest_item_img')
     img_url = tmp.get_attribute('src')
     # print(img_url)
-
-    # print(res)
     
     # 爬取图片
-    # img_path = 'D:\\sunyiwu\\Crawler\\CAPTCHA_Chrome\\CAPTCHA.png'
     img = requests.get(img_url).content
     img = cv2.imdecode(np.fromstring(img, np.uint8), 1)
     
@@ -72,4 +67,3 @@ for i in range(200):
     driver.find_element_by_class_name('geetest_refresh').click()
     sleep(3)
     print(i+xx+1)
-# f.close()
