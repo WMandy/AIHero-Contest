@@ -5,8 +5,8 @@
 ![文字](https://github.com/WMandy/AIHero-Contest/blob/master/example_images/000000.png)
 ![文字](https://github.com/WMandy/AIHero-Contest/blob/master/example_images/000021.png)  
 ### 样本来源：  
-1.爬虫，爬虫代码:oow_crawler.py  
-2.生成假数据，代码：待上传
+1.爬虫， 
+2.生成假数据
 ### 破解思路：  
 1. 使用目标检测网络ssd检测验证码图像中的文字并切割成单字  
 2. 使用分类网络识别单字，单字训练样本来源：实际切割单字图以及生成的假数据  
